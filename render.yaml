@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: frameflow-studio
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: FRAMEFLOW_SECRET
+        generateValue: true
